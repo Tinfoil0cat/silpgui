@@ -1,17 +1,13 @@
 const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
     renderer: 'zelos',
-    // THIS is the part that actually draws the "Hat" cap
+    theme: 'zelos',
     rendererOverrides: {
+        // This is the specific property Zelos looks for to render the "Cap"
         'ADD_HAT': true
-    },
-    zoom: {
-        controls: true,
-        wheel: true
     }
 });
 
-// Resizer
 window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
