@@ -10,10 +10,10 @@ Blockly.Blocks['my_custom_action'] = {
     this.setTooltip("Does something cool.");
   }
 };
-Blockly.Blocks['my_hat_block'] = {
+Blockly.Blocks['flagtap'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("when green flag taped");
+        .appendField("when green flag tapped");
     
     // In Zelos, having a Next but NO Previous 
     // automatically renders the "Hat" shape.
