@@ -9,20 +9,15 @@
 
     <div id="blocklyDiv" style="height: 100vh; width: 100vw;"></div>
 
-    <xml id="toolbox" style="display: none">
-        <category name="Events" colour="#e37f14">
-            <block type="controls_if"></block>
-            <block type="logic_compare"></block>
-        </category>
-        <category name="Loops" colour="#5ba55b">
-            <block type="controls_repeat_ext"></block>
-        </category>
-        <category name="Math" colour="#5b67a5">
-            <block type="math_number"></block>
-            <block type="math_arithmetic"></block>
-        </category>
-    </xml>
-
-    <script src="main.js"></script>
+   <xml id="toolbox" style="display: none">
+  <category name="Custom" colour="#a55b80">
+    <block type="my_custom_action"></block>
+    <block type="my_custom_value"></block>
+  </category>
+  ... (other categories)
+</xml> 
+    
+<script src="blocks.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
