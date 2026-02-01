@@ -1,6 +1,10 @@
 const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
-    renderer: 'zelos', // The Scratch 3.0 renderer
+    renderer: 'zelos', 
+    rendererOverrides: {
+        // THIS is what forces the cap on blocks with no previous connection
+        startHats: true 
+    },
     grid: {
         spacing: 25,
         length: 3,
@@ -10,11 +14,10 @@ const workspace = Blockly.inject('blocklyDiv', {
     zoom: {
         controls: true,
         wheel: true,
-        startScale: 0.8 // Scratch blocks are big; 0.8 feels more native
+        startScale: 0.9
     }
 });
 
-// Resizing logic
 window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
