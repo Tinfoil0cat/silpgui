@@ -10,7 +10,19 @@ Blockly.Blocks['my_custom_action'] = {
     this.setTooltip("Does something cool.");
   }
 };
-
+Blockly.Blocks['my_hat_block'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("when green flag taped");
+    
+    // In Zelos, having a Next but NO Previous 
+    // automatically renders the "Hat" shape.
+    this.setNextStatement(true, null); 
+    
+    this.setColour(60); // Scratch-style yellow/gold
+    this.setTooltip("Starts the script.");
+  }
+};
 // Define a custom "Reporter" block (rounded in Zelos)
 Blockly.Blocks['my_custom_value'] = {
   init: function() {
