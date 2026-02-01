@@ -3,13 +3,21 @@
  */
 const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
-    renderer: 'zelos', // The magic string for the Scratch-like UI
-    grid: {
-        spacing: 25,
-        length: 3,
-        colour: '#ccc',
-        snap: true
-    },
+    renderer: 'zelos',
+    theme: 'zelos', // Using the Zelos theme helps with colors
+    // This setting ensures blocks with no previous statement look like hats
+    horizontalLayout: false,
+    theme: {
+        'componentStyles': {
+            'workspaceBackgroundColour': '#F9F9F9'
+        },
+        'blockStyles': {
+            'hat_blocks': {
+                'hat': 'cap' // Forces the 'cap' look
+            }
+        }
+    }
+});
     zoom: {
         controls: true,
         wheel: true,
