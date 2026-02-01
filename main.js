@@ -2,7 +2,7 @@ const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
     renderer: 'zelos', 
     rendererOverrides: {
-        // THIS is what forces the cap on blocks with no previous connection
+        // IMPORTANT: This tells Zelos "If a block has no top connection, draw a Hat"
         startHats: true 
     },
     grid: {
@@ -18,6 +18,7 @@ const workspace = Blockly.inject('blocklyDiv', {
     }
 });
 
+// Auto-resize
 window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
