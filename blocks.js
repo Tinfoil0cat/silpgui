@@ -95,3 +95,15 @@ Blockly.Blocks['if'] = {
   }
 };
 
+Blockly.Blocks['start'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("move")
+            .appendField(new Blockly.FieldNumber(10), "STEPS")
+            .appendField("steps");
+        setPreviousStatement(false)
+        this.setNextStatement(true, null);
+        this.setColour("#4C97FF");
+  }
+};
+
