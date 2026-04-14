@@ -44,3 +44,17 @@ init: function() {
         this.setColour("#4C97FF");
   }
 };
+
+Blockly.Blocks['mouse'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("mouse on?");
+    
+    // 1. Remove setPreviousStatement and setNextStatement
+    // 2. Add an output set to 'Boolean'
+    this.setOutput(true, "Boolean");
+    
+    this.setColour("#4C97FF");
+  }
+};
+
