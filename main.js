@@ -1,5 +1,6 @@
 const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
+    theme: ScratchTheme,
     renderer: 'zelos', 
     rendererOverrides: {
         // IMPORTANT: This tells Zelos "If a block has no top connection, draw a Hat"
@@ -22,3 +23,18 @@ const workspace = Blockly.inject('blocklyDiv', {
 window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
+
+const ScratchTheme = Blockly.Theme.defineTheme('scratch', {
+    'base': Blockly.Themes.Classic,
+    'blockStyles': {
+        'hat_block': { 
+            'colourPrimary': '#FFBF00', 
+            'hat': 'cap' // This is what creates the rounded "Hat" top
+        }
+    },
+    'componentStyles': {
+        'workspaceBackgroundColour': '#F9F9F9',
+        'toolboxBackgroundColour': '#FFFFFF',
+        'flyoutBackgroundColour': '#FFFFFF'
+    }
+});
