@@ -87,7 +87,7 @@ Blockly.Blocks['if'] = {
         .appendField('do');
     
     // Step 2: Apply the Hex Color
-    this.setColour('#FF5733'); // Use any hex code here
+    this.setColour('#ffc72e'); // Use any hex code here
     
     this.setTooltip('Custom if block');
     this.setPreviousStatement(true, null);
