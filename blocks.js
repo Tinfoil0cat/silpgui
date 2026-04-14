@@ -107,3 +107,19 @@ init: function() {
   }
 };
 
+Blockly.Blocks['loop'] = {
+  init: function() {
+        .appendField('forever');
+    this.appendStatementInput('DO')
+        .appendField('do');
+    
+    // Step 2: Apply the Hex Color
+    this.setColour('#ffc72e'); // Use any hex code here
+    
+    this.setTooltip('Custom if block');
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(false, null);
+  }
+};
+
+
