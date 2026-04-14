@@ -98,12 +98,13 @@ Blockly.Blocks['if'] = {
 Blockly.Blocks['start'] = {
 init: function() {
         this.appendDummyInput()
-            .appendField("move")
-            .appendField(new Blockly.FieldNumber(10), "STEPS")
-            .appendField("steps");
-        this.setPreviousStatement(false)
+            .appendField("when")
+            // This loads the actual Scratch green flag SVG
+            .appendField(new Blockly.FieldImage("https://scratch.mit.edu/static/assets/38aa57841cf7733951ec650117a3a992.svg", 20, 20))
+            .appendField("clicked");
         this.setNextStatement(true, null);
-        this.setColour("#4C97FF");
+        this.setColour("#FFBF00"); // Scratch Events Yellow
+        this.setStyle('hat_block'); // This triggers the curved top
   }
 };
 
