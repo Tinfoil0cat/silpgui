@@ -77,3 +77,21 @@ Blockly.Blocks['key'] = {
     this.setColour("#62f5d3");
   }
 };
+
+Blockly.Blocks['if'] = {
+  init: function() {
+    this.appendValueInput('CONDITION')
+        .setCheck('Boolean')
+        .appendField('if');
+    this.appendStatementInput('DO')
+        .appendField('do');
+    
+    // Step 2: Apply the Hex Color
+    this.setColour('#FF5733'); // Use any hex code here
+    
+    this.setTooltip('Custom if block');
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+  }
+};
+
