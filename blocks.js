@@ -20,3 +20,27 @@ init: function() {
         this.setColour("#4C97FF");
   }
 };
+
+Blockly.Blocks['movey'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("move y by")
+            .appendField(new Blockly.FieldNumber(10), "x");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#4C97FF");
+  }
+};
+
+Blockly.Blocks['goto'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("move to x:")
+            .appendField(new Blockly.FieldNumber(10), "x")
+            .appendField("y:")
+            .appendField(new Blockly.FieldNumber(10), "Y");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#4C97FF");
+  }
+};
