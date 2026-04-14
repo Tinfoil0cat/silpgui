@@ -32,9 +32,4 @@ const ScratchTheme = Blockly.Theme.defineTheme('scratch', {
             'hat': 'cap' // This is what creates the rounded "Hat" top
         }
     },
-    'componentStyles': {
-        'workspaceBackgroundColour': '#F9F9F9',
-        'toolboxBackgroundColour': '#FFFFFF',
-        'flyoutBackgroundColour': '#FFFFFF'
-    }
 });
