@@ -54,7 +54,26 @@ Blockly.Blocks['mouse'] = {
     // 2. Add an output set to 'Boolean'
     this.setOutput(true, "Boolean");
     
-    this.setColour("#4C97FF");
+    this.setColour("#62f5d3");
   }
 };
 
+Blockly.Blocks['key'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("if")
+        .appendField(new Blockly.FieldDropdown([
+          ["any", "any"], 
+          ["space", "SPACE"], 
+          ["up arrow", "UP"], 
+          ["down arrow", "DOWN"]
+        ]), "KEY")
+        .appendField("key pressed");
+    
+    // 1. Remove setPreviousStatement and setNextStatement
+    // 2. Add an output set to 'Boolean'
+    this.setOutput(true, "Boolean");
+    
+    this.setColour("#62f5d3");
+  }
+};
