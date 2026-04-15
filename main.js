@@ -1,10 +1,13 @@
+// Create a theme that enables hats for all "start" blocks
+const hatTheme = Blockly.Theme.defineTheme('hat_theme', {
+    'base': Blockly.Themes.Classic,
+    'startHats': true // This enables the rounded top for blocks with no top notch
+});
+
 const workspace = Blockly.inject('blocklyDiv', {
     toolbox: document.getElementById('toolbox'),
     renderer: 'zelos', 
-    rendererOverrides: {
-        // IMPORTANT: This tells Zelos "If a block has no top connection, draw a Hat"
-        'hat': true 
-    },
+    theme: hatTheme, // Apply the theme here
     grid: {
         spacing: 25,
         length: 3,
@@ -22,10 +25,3 @@ const workspace = Blockly.inject('blocklyDiv', {
 window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
-
-const workspace = Blockly.inject('blocklyDiv', {
-  renderer: 'geras', // or 'zelos' for a Scratch-like look
-  theme: Blockly.Theme.defineTheme('hatTheme', {
-    'startHats': true // Globally enables hats for start blocks
-  })
-});
