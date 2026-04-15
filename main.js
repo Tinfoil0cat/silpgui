@@ -23,3 +23,9 @@ window.addEventListener('resize', () => {
     Blockly.svgResize(workspace);
 }, false);
 
+const workspace = Blockly.inject('blocklyDiv', {
+  renderer: 'geras', // or 'zelos' for a Scratch-like look
+  theme: Blockly.Theme.defineTheme('hatTheme', {
+    'startHats': true // Globally enables hats for start blocks
+  })
+});
