@@ -104,7 +104,6 @@ init: function() {
             .appendField("clicked");
         this.setNextStatement(true, null);
         this.setColour("#FFBF00"); // Scratch Events Yellow
-        this.setStyle('hat_block'); // This triggers the curved top
   }
 };
 
