@@ -130,4 +130,13 @@ init: function() {
   }
 };
 
-
+Blockly.Blocks['nextcos'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("next")
+            .appendField("costume");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#ff70f3");
+  }
+};
