@@ -54,7 +54,7 @@ Blockly.Blocks['mouse'] = {
     // 2. Add an output set to 'Boolean'
     this.setOutput(true, "Boolean");
     
-    this.setColour("#62f5d3");
+    this.setColour("#28bd52");
   }
 };
 
@@ -74,7 +74,7 @@ Blockly.Blocks['key'] = {
     // 2. Add an output set to 'Boolean'
     this.setOutput(true, "Boolean");
     
-    this.setColour("#62f5d3");
+    this.setColour("#28bd52");
   }
 };
 
@@ -87,7 +87,7 @@ Blockly.Blocks['if'] = {
         .appendField('');
     
     // Step 2: Apply the Hex Color
-    this.setColour('#ffc72e'); // Use any hex code here
+    this.setColour('#ffb300'); // Use any hex code here
     
     this.setTooltip('Custom if block');
     this.setPreviousStatement(true, null);
@@ -137,7 +137,7 @@ init: function() {
             .appendField("costume");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour("#ff70f3");
+        this.setColour("#9966ff");
   }
 };
 
@@ -150,7 +150,7 @@ Blockly.Blocks['forever_loop'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(false, null);
     // Use the hex string here
-    this.setColour("#ffc72e"); 
+    this.setColour("#ffb300"); 
     this.setTooltip("");
     this.setHelpUrl("");
   }
