@@ -140,3 +140,15 @@ init: function() {
         this.setColour("#ff70f3");
   }
 };
+
+Blockly.Blocks['forever'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("next")
+            .appendField("costume");
+        this.appendStatementInput('DO');
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#ff70f3");
+  }
+};
