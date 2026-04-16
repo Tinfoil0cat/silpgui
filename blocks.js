@@ -58,24 +58,27 @@ Blockly.Blocks['mouse'] = {
   }
 };
 
-Blockly.Blocks['key'] = {
+Blockly.Blocks['key_pressed'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("key")
         .appendField(new Blockly.FieldDropdown([
           ["any", "any"], 
           ["space", "SPACE"], 
           ["up arrow", "UP"], 
-          ["down arrow", "DOWN"]
-          ["Left arrow", "LEFT"]
+          ["down arrow", "DOWN"], // Added missing comma here!
+          ["left arrow", "LEFT"],
+          ["Right arrow", "RIGHT"]
         ]), "KEY")
-        .appendField("pressed");
-    
-    // 1. Remove setPreviousStatement and setNextStatement
-    // 2. Add an output set to 'Boolean'
+        .appendField("pressed?"); // Added a question mark for better logic reading
+
+    // This makes it a 'pointy' boolean block
     this.setOutput(true, "Boolean");
     
+    // Using your custom electric green
     this.setColour("#28bd52");
+    
+    this.setTooltip("Returns true if the selected key is being pressed.");
+    this.setHelpUrl("");
   }
 };
 
