@@ -1,0 +1,16 @@
+/* Create the Scratch-style colored circle */
+.blocklyTreeIcon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; /* Use 0% for squares */
+  margin-right: 10px;
+  border: none !important;
+}
+
+/* Adjust text styling */
+.blocklyTreeLabel {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12pt;
+  font-weight: 500;
+}
