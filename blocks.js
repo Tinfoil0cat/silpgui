@@ -180,3 +180,5 @@ init: function() {
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setColour("#4C97FF");
+  }
+};
