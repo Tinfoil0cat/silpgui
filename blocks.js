@@ -84,7 +84,7 @@ Blockly.Blocks['if'] = {
         .setCheck('Boolean')
         .appendField('if');
     this.appendStatementInput('DO')
-        .appendField('do');
+        .appendField('');
     
     // Step 2: Apply the Hex Color
     this.setColour('#ffc72e'); // Use any hex code here
@@ -146,7 +146,7 @@ Blockly.Blocks['forever_loop'] = {
     this.appendDummyInput()
         .appendField("forever");
     this.appendStatementInput("DO")
-        .appendField("do");
+        .appendField("");
     this.setPreviousStatement(true, null);
     this.setNextStatement(false, null);
     // Use the hex string here
@@ -155,3 +155,4 @@ Blockly.Blocks['forever_loop'] = {
     this.setHelpUrl("");
   }
 };
+
