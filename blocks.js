@@ -68,33 +68,6 @@ Blockly.Blocks['key'] = {
           ["up arrow", "UP"], 
           ["down arrow", "DOWN"]
           ["Left arrow", "LEFT"]
-                ["q", "A"]
-                ["w", "RIGHT"]
-                ["e", "RIGHT"]
-                ["r", "RIGHT"]
-                ["t", "RIGHT"]
-                ["y", "RIGHT"]
-                ["u", "RIGHT"]
-                ["i", "RIGHT"]
-                ["o", "RIGHT"]
-                ["p", "RIGHT"]
-                ["a", "RIGHT"]
-                ["s", "RIGHT"]
-                ["d", "RIGHT"]
-                ["f", "RIGHT"]
-                ["g", "RIGHT"]
-                ["h", "RIGHT"]
-                ["j", "RIGHT"]
-                ["k", "RIGHT"]
-                ["l", "RIGHT"]
-                ["z", "RIGHT"]
-                ["x", "RIGHT"]
-                ["c", "RIGHT"]
-                ["v", "RIGHT"]
-                ["b", "RIGHT"]
-                ["n", "RIGHT"]
-                ["m", "RIGHT"]
-                
         ]), "KEY")
         .appendField("pressed");
     
