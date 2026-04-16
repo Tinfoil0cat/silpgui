@@ -160,3 +160,15 @@ Blockly.Blocks['forever_loop'] = {
   }
 };
 
+Blockly.Blocks['wait'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("wait")
+            .appendField(new Blockly.FieldNumber(10), "STEPS")
+            .appendField("secs");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#ffb300");
+  }
+};
+
