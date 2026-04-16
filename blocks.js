@@ -61,14 +61,43 @@ Blockly.Blocks['mouse'] = {
 Blockly.Blocks['key'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("if")
+        .appendField("key")
         .appendField(new Blockly.FieldDropdown([
           ["any", "any"], 
           ["space", "SPACE"], 
           ["up arrow", "UP"], 
           ["down arrow", "DOWN"]
+          ["Left arrow", "LEFT"]
+          ["Right arrow", "RIGHT"]
+                ["q", "A"]
+                ["w", "RIGHT"]
+                ["e", "RIGHT"]
+                ["r", "RIGHT"]
+                ["t", "RIGHT"]
+                ["y", "RIGHT"]
+                ["u", "RIGHT"]
+                ["i", "RIGHT"]
+                ["o", "RIGHT"]
+                ["p", "RIGHT"]
+                ["a", "RIGHT"]
+                ["s", "RIGHT"]
+                ["d", "RIGHT"]
+                ["f", "RIGHT"]
+                ["g", "RIGHT"]
+                ["h", "RIGHT"]
+                ["j", "RIGHT"]
+                ["k", "RIGHT"]
+                ["l", "RIGHT"]
+                ["z", "RIGHT"]
+                ["x", "RIGHT"]
+                ["c", "RIGHT"]
+                ["v", "RIGHT"]
+                ["b", "RIGHT"]
+                ["n", "RIGHT"]
+                ["m", "RIGHT"]
+                
         ]), "KEY")
-        .appendField("key pressed");
+        .appendField("pressed");
     
     // 1. Remove setPreviousStatement and setNextStatement
     // 2. Add an output set to 'Boolean'
