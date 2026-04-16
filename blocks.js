@@ -35,10 +35,10 @@ init: function() {
 Blockly.Blocks['goto'] = {
 init: function() {
         this.appendDummyInput()
-            .appendField("move to x:")
-            .appendField(new Blockly.FieldNumber(10), "x")
+            .appendField("go to x:")
+            .appendField(new Blockly.FieldNumber(0), "x")
             .appendField("y:")
-            .appendField(new Blockly.FieldNumber(10), "Y");
+            .appendField(new Blockly.FieldNumber(0), "Y");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setColour("#4C97FF");
@@ -107,5 +107,27 @@ init: function() {
   }
 };
 
+Blockly.Blocks['movey'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("move y by")
+            .appendField(new Blockly.FieldNumber(10), "STEPS");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour("#4C97FF");
+  }
+};
+
+Blockly.Blocks['tap'] = {
+init: function() {
+        this.appendDummyInput()
+            .appendField("when")
+            // This loads the actual Scratch green flag SVG
+            .appendField("this char")
+            .appendField("clicked");
+        this.setNextStatement(true, null);
+        this.setColour("#FFBF00"); // Scratch Events Yellow
+  }
+};
 
 
