@@ -141,14 +141,17 @@ init: function() {
   }
 };
 
-Blockly.Blocks['forever'] = {
-init: function() {
-        this.appendDummyInput()
-            .appendField("next")
-            .appendField("costume");
-        this.appendStatementInput('DO');
-        this.setPreviousStatement(true, null);
-        this.setNextStatement(true, null);
-        this.setColour("#ff70f3");
+Blockly.Blocks['forever_loop'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("forever");
+    this.appendStatementInput("DO")
+        .appendField("do");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(false, null);
+    // Use the hex string here
+    this.setColour("#ffc72e"); 
+    this.setTooltip("");
+    this.setHelpUrl("");
   }
 };
