@@ -68,7 +68,6 @@ Blockly.Blocks['key'] = {
           ["up arrow", "UP"], 
           ["down arrow", "DOWN"]
           ["Left arrow", "LEFT"]
-          ["Right arrow", "RIGHT"]
                 ["q", "A"]
                 ["w", "RIGHT"]
                 ["e", "RIGHT"]
