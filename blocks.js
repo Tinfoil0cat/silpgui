@@ -175,12 +175,11 @@ init: function() {
 Blockly.Blocks['size'] = {
 init: function() {
         this.appendDummyInput()
-            .appendField("wait")
-            .appendField(new Blockly.FieldNumber(10), "sec")
-            .appendField("secs");
+            .appendField("set size to")
+            .appendField(new Blockly.FieldNumber(100), "size");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setColour("#ffb300");
+        this.setColour("#9966ff");
   }
 };
 
