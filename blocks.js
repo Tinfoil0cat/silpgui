@@ -104,7 +104,7 @@ init: function() {
         this.appendDummyInput()
             .appendField("when")
             // This loads the actual Scratch green flag SVG
-            .appendField(new Blockly.FieldImage("https://silp-gui.vercel.app/y_start2.png", 20, 20))
+            .appendField(new Blockly.FieldImage("https://silp-gui.vercel.app/start_flag.png", 20, 20))
             .appendField("clicked");
         this.setNextStatement(true, null);
         this.setColour("#FFBF00"); // Scratch Events Yellow
