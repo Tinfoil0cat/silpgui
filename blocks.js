@@ -14,7 +14,8 @@ Blockly.Blocks['movex'] = {
 init: function() {
         this.appendDummyInput()
             .appendField("move x by")
-            .appendField(new Blockly.FieldNumber(10), "STEPS");
+        .appendField(new Blockly.FieldNumber(0, 0, 100, 1), 'NUM');
+    this.setOutput(true, 'Number');
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
         this.setColour("#4C97FF");
